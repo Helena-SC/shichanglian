@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>Shichang Lian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { 
+      font-family: system-ui, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background: #f4f6f8; 
+      color: #333;
+    }
+    header { 
+      background: #2c3e50; 
+      color: white; 
+      padding: 2rem; 
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { margin: 0.5rem 0 0; font-size: 1.1rem; }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 2rem; }
+    h2 { border-bottom: 2px solid #ddd; padding-bottom: 0.3rem; color: #2c3e50; }
+    ul { padding-left: 1.2rem; }
+    footer { text-align: center; color: #888; padding: 1rem; border-top: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shichang Lian</h1>
+    <p>CS PhD | ECGi · Time-series · Hybrid modeling</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Shichang. I’m passionate about combining computer science and biomedical engineering.  
+        I work on reconstructing cardiac potentials from body-surface signals and applying machine learning methods such as meta-learning and hybrid modeling.  
+      </p>
+    </section>
+
+    <section>
+      <h2>Interests & Hobbies</h2>
+      <ul>
+        <li>Researching ECGi and cardiac modeling</li>
+        <li>Exploring new machine learning techniques</li>
+        <li>Cooking (especially shrimp with scrambled eggs 🦐🍳)</li>
+        <li>Traveling and discovering local food</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sl5074@rit.edu">sl5074@rit.edu</a></p>
+      <p>GitHub: <a href="https://github.com/Helena-SC">Helena-SC</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Shichang Lian
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
