@@ -5,26 +5,61 @@
   <title>Shichang Lian</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { 
-      font-family: system-ui, sans-serif; 
-      margin: 0; 
-      padding: 0; 
-      background: #f4f6f8; 
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
       color: #333;
     }
-    header { 
-      background: #2c3e50; 
-      color: white; 
-      padding: 2rem; 
+    header {
       text-align: center;
+      color: white;
+      padding: 3rem 1rem 2rem;
     }
-    header h1 { margin: 0; font-size: 2.2rem; }
-    header p { margin: 0.5rem 0 0; font-size: 1.1rem; }
-    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    section { margin-bottom: 2rem; }
-    h2 { border-bottom: 2px solid #ddd; padding-bottom: 0.3rem; color: #2c3e50; }
-    ul { padding-left: 1.2rem; }
-    footer { text-align: center; color: #888; padding: 1rem; border-top: 1px solid #ddd; }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    main {
+      max-width: 900px;
+      margin: -40px auto 2rem;
+      padding: 0 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+      color: #1e3c72;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #2a5298;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
   </style>
 </head>
 <body>
@@ -34,34 +69,36 @@
   </header>
 
   <main>
-    <section>
+    <div class="card">
       <h2>About Me</h2>
       <p>
         Hi! I'm Shichang. I’m passionate about combining computer science and biomedical engineering.  
         I work on reconstructing cardiac potentials from body-surface signals and applying machine learning methods such as meta-learning and hybrid modeling.  
       </p>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Interests & Hobbies</h2>
       <ul>
         <li>Researching ECGi and cardiac modeling</li>
         <li>Exploring new machine learning techniques</li>
-        <li>Cooking (especially shrimp with scrambled eggs 🦐🍳)</li>
+        <li>Cooking</li>
         <li>Traveling and discovering local food</li>
+        <li>Landscape Photography</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sl5074@rit.edu">sl5074@rit.edu</a></p>
       <p>GitHub: <a href="https://github.com/Helena-SC">Helena-SC</a></p>
-    </section>
+    </div>
   </main>
 
   <footer>
     © <span id="year"></span> Shichang Lian
   </footer>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
